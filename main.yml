@@ -1,0 +1,19 @@
+---
+
+- hosts: dev.wacs
+  sudo: yes
+  tasks: 
+#   - user: name=steven comment="Steven" group=wheel
+#     name=steven group=wheel
+   
+#   - name: Placing key
+#     authorized_key: user=steven key="{{ lookup('file', 'steven.pub') }}" 
+
+    - name: create a new user
+      user: 
+            name=test
+            state=present
+#            group=primary-group
+            groups="sudo"
+#            password={{ password }}
+#            comment="Comment"

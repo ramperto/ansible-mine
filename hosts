@@ -1,0 +1,2 @@
+[dev.wacs]
+alias ansible_ssh_host=dev.wacs
